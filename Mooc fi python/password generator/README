@@ -1,0 +1,7 @@
+lease write an improved version of your password generator. The function now takes three arguments:
+
+If the second argument is True, the generated password should also contain one or more numbers.
+If the third argument is True, the generated password should also contain one or more of these special characters: !?=+-()#.
+Despite these two additional arguments, the password should always contain at least one lowercase alphabet.
+You may assume the function will only be called with combinations of arguments that are possible to formulate into passwords following these rules.
+That is, the arguments will not specify e.g. a password of length 2 which contains both a number and a special characters, for then there would not be space for the mandatory lowercase letter.
