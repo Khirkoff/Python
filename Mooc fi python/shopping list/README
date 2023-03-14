@@ -1,0 +1,4 @@
+The exercise template contains a pre-defined ShoppingList class, which can be used to model a shopping list.
+
+Please write a function named total_units(my_list: ShoppingList), which takes a ShoppingList type object as its argument.
+The function should calculate the total number of units listed, and return the value.
