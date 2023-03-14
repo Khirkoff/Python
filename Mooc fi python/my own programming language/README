@@ -1,0 +1,29 @@
+In this exercise you will write your own programming language executor. You can use any techniques and skills you have learnt on this course thus far.
+
+The programs will consist of rows, and each row will be in one of the following formats:
+
+PRINT [value]: prints the value
+MOV [variable] [value]: assigns the value to the variable
+ADD [variable] [value]: adds the value to the variable
+SUB [variable] [value]: subtracts the value from the variable
+MUL [variable] [value]: multiplies the variable by the value
+[location]:: names a line of code, so it can be jumped to from elsewhere
+JUMP [location]: jumps to the location specified
+IF [condition] JUMP [location]: if the condition is true, jump to the location specified
+END: finish execution
+The square brackets above are just a notation to signify operands; see below for usage examples.
+
+The program is executed line by line from the first line onwards. The execution ends when the executor comes across the command END, or when there are no more lines to execute.
+
+Each program has 26 pre-defined variables, named A to Z. Each variable has the value 0 when the program begins. The notation [variable] refers to one of these 26 variables.
+
+All the values processed by the program are integer numbers. The notation [value] refers either to a value stored in a variable, or an integer number typed in directly.
+
+The notation [location] refers to any name of a location which consists of lowercase letters a to z and/or numbers 0 to 9. Two different locations may not have the same name.
+
+The notation [condition] refers to any expression in the format [value] [comparison] [value], where [comparison] is one of the following operators: ==, !=, <, <=, > and >=.
+
+Please write a function named run(program), which takes a list containing the program commands as its argument. Each item on the list is a line of code in the program.
+The function should return a new list, which contains the results of the PRINT commands executed during the program's run.
+
+You may assume the function will only be given programs which are entirely in the correct format. You do not have to implement any input validation or error handling
