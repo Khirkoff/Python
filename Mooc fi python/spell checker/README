@@ -1,5 +1,4 @@
-In this exercise you will write an improved version of the Spell checker from the previous part.
-
-Just like in the previous version, the program should ask the user to type in a line of text. Your program should then perform a spell check,and print out feedback to the user, so that all misspelled words have stars around them.
+The program should ask the user to type in a line of text.
+Your program should then perform a spell check,and print out feedback to the user, so that all misspelled words have stars around them.
 Additionally, the program should print out a list of suggestions for the misspelled words.
 
