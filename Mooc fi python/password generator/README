@@ -1,4 +1,4 @@
-lease write an improved version of your password generator. The function now takes three arguments:
+Please write an improved version of your password generator. The function now takes three arguments:
 
 If the second argument is True, the generated password should also contain one or more numbers.
 If the third argument is True, the generated password should also contain one or more of these special characters: !?=+-()#.
