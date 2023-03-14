@@ -1,4 +1,3 @@
-# the calculator
 from tkinter import Tk, Button, Label, Grid, Entry, END
 
 root = Tk()
