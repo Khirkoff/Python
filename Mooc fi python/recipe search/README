@@ -1,4 +1,23 @@
-This exercise is about creating a program which allows the user to search for recipes based on their names, preparation times, or ingredients used. The program should read the recipes from a file submitted by the user.
+This exercise is about creating a program which allows the user to search for recipes based on their names, preparation times, or ingredients used.
 
-Each recipe consists of three or more lines. The first line has the name of the recipe, the second line contains an integer number representing the preparation time in minutes, and the remaining line or lines contain the ingredients used, one on each line. The recipe ends with an empty line, with the exception of the final recipe in the file which just ends with the end of the file. So, there can be more than one recipe in a single file, like in the example below.
+The program should read the recipes from a file submitted by the user.
+
+Each recipe consists of three or more lines. The first line has the name of the recipe, the second line contains an integer number representing the preparation time
+in minutes, and the remaining line or lines contain the ingredients used, one on each line. 
+
+The recipe ends with an empty line, with the exception of the final recipe in the file which just ends with the end of the file. 
+
+So, there can be more than one recipe in a single file, like in the example below.
+
+Please write a function named search_by_name(filename: str, word: str), which takes a filename and a search string as its arguments.
+The function should go through the file and select all recipes whose name contains the given search string.
+The names of these recipes are then returned in a list.
+
+Please write a function named search_by_time(filename: str, prep_time: int), which takes a filename and an integer as its arguments.
+The function should go through the file and select all recipes whose preparation time is at most the number given.
+The names of these recipes are again returned in a list, but the preparation time should be appended to each name.
+
+Please write a function named search_by_ingredient(filename: str, ingredient: str), which takes a filename and a search string as its arguments.
+The function should go through the file and select all recipes whose ingredients contain the given search string.
+The names of these recipes are returned in a list just like in the second part, with the preparation time appended. 
 
