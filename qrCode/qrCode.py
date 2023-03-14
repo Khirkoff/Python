@@ -1,4 +1,4 @@
 import qrcode
 
-code = qrcode.make(input("What do you want to share? "))
+code = qrcode.make(input("Ce doresti sa fie afisat? "))
 code.save("qrrrrrr.jpg")
