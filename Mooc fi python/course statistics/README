@@ -1,0 +1,15 @@
+  At the address https://studies.cs.helsinki.fi/stats-mock/api/courses you will find basic information about some of the courses offered by the University of Helsinki 
+Department of Computer Science, in JSON format.Please write a function named retrieve_all(), which retrieves the data of all the courses which are currently active 
+(the field enabled has the value true).
+
+Each tuple contains the following fields from the original data:
+  the name of the course: fullName
+  name
+  year
+  the sum of the values listed in exercises
+  
+  Each course also has its own URL, where more specific weekly data about the course is available. 
+The URLs follow the format https://studies.cs.helsinki.fi/stats-mock/api/courses/****/stats, where you would replace the stars with the contents of the field name for 
+the course you want to access. For example, the data for the course docker2019 is at the address https://studies.cs.helsinki.fi/stats-mock/api/courses/docker2019/stats.
+
+Please write a function named retrieve_course(course_name: str), which returns statistics for the specified course, in dictionary format.
