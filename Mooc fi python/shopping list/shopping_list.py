@@ -1,5 +1,3 @@
-# DO NOT CHANGE THE CODE OF THE CLASS
-# ShoppingList. Write yous solution under it!
 class ShoppingList:
     def __init__(self):
         self.products = []
